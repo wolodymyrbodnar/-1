@@ -1,0 +1,17 @@
+masive = [
+    [5, 7, 4, 3],
+    [1, 15, 0, 8],
+    [9, 12, 11, 9],
+    [4, 8, 1, 10]
+]
+
+print("Сума рядків масиву:")
+for i, row in enumerate(masive, 1):
+    masivesum = sum(row)
+    print(f"Рядок {i}: {masivesum}")
+
+
+print("Відсортований масив за зростанням суми:")
+sortmasive = sorted(masive, key=sum)
+for row in sortmasive:
+    print(row)
